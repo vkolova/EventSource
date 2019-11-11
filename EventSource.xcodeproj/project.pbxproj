@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23D3483A237981B200822117 /* EventSource_Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D34838237981B200822117 /* EventSource_Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23D3483E237981BB00822117 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F83F230F38E9004C3141 /* Event.swift */; };
+		23D3483F237981BE00822117 /* EventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F840230F38E9004C3141 /* EventSource.swift */; };
+		23D34840237981C100822117 /* EventStreamParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F841230F38E9004C3141 /* EventStreamParser.swift */; };
 		657A452F23433EDD0017B99A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F83F230F38E9004C3141 /* Event.swift */; };
 		657A453023433EDD0017B99A /* EventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F840230F38E9004C3141 /* EventSource.swift */; };
 		657A453123433EDD0017B99A /* EventStreamParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F841230F38E9004C3141 /* EventStreamParser.swift */; };
@@ -38,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23D34836237981B200822117 /* EventSource_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventSource_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D34838237981B200822117 /* EventSource_Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventSource_Mac.h; sourceTree = "<group>"; };
+		23D34839237981B200822117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		657A452723433EBA0017B99A /* EventSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657A452A23433EBA0017B99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E009F80D230F387A004C3141 /* EventSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23D34833237981B200822117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		657A452423433EBA0017B99A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,12 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23D34837237981B200822117 /* EventSource Mac */ = {
+			isa = PBXGroup;
+			children = (
+				23D34838237981B200822117 /* EventSource_Mac.h */,
+				23D34839237981B200822117 /* Info.plist */,
+			);
+			path = "EventSource Mac";
+			sourceTree = "<group>";
+		};
 		E009F804230F387A004C3141 = {
 			isa = PBXGroup;
 			children = (
 				E009F83E230F38C0004C3141 /* EventSource */,
 				E009F80F230F387A004C3141 /* EventSourceSample */,
 				E009F824230F387B004C3141 /* EventSourceTests */,
+				23D34837237981B200822117 /* EventSource Mac */,
 				E009F80E230F387A004C3141 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +123,7 @@
 				E009F80D230F387A004C3141 /* EventSource.app */,
 				E009F821230F387B004C3141 /* EventSourceTests.xctest */,
 				657A452723433EBA0017B99A /* EventSource.framework */,
+				23D34836237981B200822117 /* EventSource_Mac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +175,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		23D34831237981B200822117 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D3483A237981B200822117 /* EventSource_Mac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		657A452223433EBA0017B99A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +193,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		23D34835237981B200822117 /* EventSource Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D3483D237981B200822117 /* Build configuration list for PBXNativeTarget "EventSource Mac" */;
+			buildPhases = (
+				23D34831237981B200822117 /* Headers */,
+				23D34832237981B200822117 /* Sources */,
+				23D34833237981B200822117 /* Frameworks */,
+				23D34834237981B200822117 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EventSource Mac";
+			productName = "EventSource Mac";
+			productReference = 23D34836237981B200822117 /* EventSource_Mac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		657A452623433EBA0017B99A /* EventSource iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 657A452C23433EBA0017B99A /* Build configuration list for PBXNativeTarget "EventSource iOS" */;
@@ -223,6 +274,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Andres;
 				TargetAttributes = {
+					23D34835237981B200822117 = {
+						CreatedOnToolsVersion = 11.2;
+					};
 					657A452623433EBA0017B99A = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -250,11 +304,19 @@
 				E009F80C230F387A004C3141 /* EventSource */,
 				E009F820230F387B004C3141 /* EventSourceTests */,
 				657A452623433EBA0017B99A /* EventSource iOS */,
+				23D34835237981B200822117 /* EventSource Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		23D34834237981B200822117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		657A452523433EBA0017B99A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +344,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		23D34832237981B200822117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D34840237981C100822117 /* EventStreamParser.swift in Sources */,
+				23D3483E237981BB00822117 /* Event.swift in Sources */,
+				23D3483F237981BE00822117 /* EventSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		657A452323433EBA0017B99A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +412,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		23D3483B237981B200822117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LFNG3Q6WX2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "EventSource Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.nemetschek.EventSource-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23D3483C237981B200822117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LFNG3Q6WX2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "EventSource Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.nemetschek.EventSource-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		657A452D23433EBA0017B99A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -595,6 +725,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23D3483D237981B200822117 /* Build configuration list for PBXNativeTarget "EventSource Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D3483B237981B200822117 /* Debug */,
+				23D3483C237981B200822117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		657A452C23433EBA0017B99A /* Build configuration list for PBXNativeTarget "EventSource iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
